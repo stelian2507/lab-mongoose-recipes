@@ -26,7 +26,8 @@ mongoose
     console.error('Error connecting to the database', error);
   });
 
-
+ 
+  
 // ITERATION 2
 
    Model.create({ name: 'NewFood', duration: 32 })
