@@ -1,17 +1,16 @@
 {
-  "name": "lab-mongoose-recipes",
+  "name": "2-25",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js",
-    "dev": "node ./index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "mongoose": "^5.8.9"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.2"
+    "express": "^4.17.1",
+    "mongoose": "^5.11.18"
   }
 }

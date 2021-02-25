@@ -25,3 +25,11 @@ mongoose
   .catch(error => {
     console.error('Error connecting to the database', error);
   });
+
+
+// ITERATION 2
+
+   Model.create({ name: 'NewFood', duration: 32 })
+  .then(res => console.log(res))
+  .catch(err => console.error(err))
+  
