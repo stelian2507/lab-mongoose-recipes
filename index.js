@@ -30,7 +30,8 @@ mongoose
   
 // ITERATION 2
 
-   Model.create({ name: 'NewFood', duration: 32 })
+   Recipe.create({ name: 'NewFood', duration: 32 })
   .then(res => console.log(res))
   .catch(err => console.error(err))
   
+
