@@ -17,6 +17,8 @@ mongoose
     
     return self.connection.dropDatabase();
   })
+
+  //Iteration 2 - Create a recipe 
   .then(async() => {
 
     await Recipe.create({
@@ -24,21 +26,27 @@ mongoose
       level: "masterchef",
       ingredients: ["froglegs", "eggs"],
       cuisine: "Florida",
-      dishType: "Snack on the steak",
+      dishType: "steak",
       duration: 17,
-      creator: "almighty Victor"
+      creator: "Stelian"
     }).then(console.log)
+
+   // Iteration 3 - Insert multiple recipes
 
     await Recipe.insertMany(data).then(console.log)
 
+    //Iteration 4 - Update recipe
+  
     await Recipe.findOneAndUpdate({title: 'Rigatoni alla Genovese'}, {duration: 100}).then(console.log)
 
-
+    //Iteration 5 - Remove a recipe
     await Recipe.deleteOne({title:'Carrot Cake'}).then((res) => console.log('Carrot Cake Deleted'))
     
     mongoose.connection.close()
 
   })
+
+  //Iteration 6 - Close the Database
   .catch(error => {
     console.error('Error connecting to the database', error);
     
